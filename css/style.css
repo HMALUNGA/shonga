@@ -8,11 +8,76 @@ header{
 	justify-content: center;
 	align-items: center;
 }
-header section{height: 80vh;background-color: lightblue;border: .1rem solid #777; width: 25vw; display: flex;flex-direction: row;justify-content: center;align-items: center;overflow: hidden;}
-h1,h2{text-transform: uppercase; text-align: center; text-shadow: 1px 1px #777;}
-header h2{ padding: 100%;  font-size: 1.8rem;background-color:rgba(0, 0, 0, .4); cursor: pointer; transition-property: all;transition-duration: 2s;transition-timing-function:ease-in-out; }
-header h2:hover{background-color: rgba(0, 0, 0, .2); color: transparent; }
+header section{height: 80vh;background-color: #666;border: .1rem solid #777; width: 25vw; display: flex;flex-direction: row;justify-content: center;align-items: center;overflow: hidden;}
+h1,h2{ white-space: nowrap; text-transform: capitalize; text-align: center; text-shadow: 1px 1px #fff;}
+header h2{ opacity: 0; padding: 100%;  font-size: 2.5rem;background-color:rgba(0, 0, 0, 0); cursor: pointer; transition-property: all;transition-duration: .6s;transition-timing-function:ease-in; }
+header h2:hover{ opacity: 1; background-color: rgba(0, 0, 0, .6); color: transparent; color:transparent; }
 header h1{font-size: 3rem;}
+#shonga h1{ padding:14rem  1rem; border: 5rem solid #333;}
+#wansati{animation-name:wansati; animation-duration:7s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-direction:alternate; }
+header #wuana{animation-name:wuana; animation-duration: 3s;animation-direction: alternate;animation-timing-function: ease-in-out;animation-iteration-count: infinite;}
+header #wanuna{animation-name:wanuna; animation-duration: 10s;animation-direction: alternate;animation-timing-function: ease-in-out;animation-iteration-count: infinite;}
 
+@keyframes wansati{
 
+	0%, 30%{
+        background-image: url('../img/a.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+	31%, 70%{
+        background-image: url('../img/e.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+	71%, 100%{
+        background-image: url('../img/c.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+}
 
+@keyframes wuana{
+	0%, 30%{
+		background-image: url('../img/c.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+	35%, 60%{
+		background-image: url('../img/h.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+	65%, 100%{
+		background-image: url('../img/e.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+}
+
+@keyframes wanuna{
+	0%, 30%{
+		background-image: url('../img/c.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+	35%, 60%{
+		background-image: url('../img/h.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+	65%, 100%{
+		background-image: url('../img/e.jpeg'); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+	}
+}
